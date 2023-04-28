@@ -1,11 +1,10 @@
 import React from "react";
 
-function AddTransactions(){
+function AddTransactions({
+    handleSubmit
+}){
 
-    function handleSubmit(e){
-        e.preventDefault()
-        console.log(e)
-    }
+    
     return(
         <form className="transactions" onSubmit={handleSubmit}>
             <label>Date</label>
